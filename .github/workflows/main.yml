@@ -20,8 +20,8 @@ jobs:
         file: ./src/Dockerfile
         push: true
         tags: | 
-          fabricioveronez/aula-primeira-pipeline:v${{ github.run_number }} 
-          fabricioveronez/aula-primeira-pipeline:latest 
+          felipec23/aula-primeira-pipeline:v${{ github.run_number }} 
+          felipec23/aula-primeira-pipeline:latest 
   CD-Homolog:
     needs: [CI]
     uses: f1Costa/base-pipeline-ci-cd/.github/workflows/deploy.yaml@main
