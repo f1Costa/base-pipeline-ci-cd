@@ -30,7 +30,7 @@ jobs:
       manifests: | 
         k8s/deployment.yaml
       images: | 
-        fabricioveronez/aula-primeira-pipeline:v${{ github.run_number }} 
+        felipec23/aula-primeira-pipeline:v${{ github.run_number }} 
       environment: homologacao
     secrets: inherit
 
@@ -49,6 +49,6 @@ jobs:
       manifests: | 
         k8s/deployment.yaml
       images: | 
-        fabricioveronez/aula-primeira-pipeline:v${{ github.run_number }} 
+        felipec23/aula-primeira-pipeline:v${{ github.run_number }} 
       environment: producao
     secrets: inherit
